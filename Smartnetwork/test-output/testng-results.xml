@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-19T13:27:28 IST" name="Smart Suite" finished-at="2021-09-19T13:28:29 IST" duration-ms="61033">
+    <groups>
+    </groups>
+    <test started-at="2021-09-19T13:27:28 IST" name="FunctionalTest" finished-at="2021-09-19T13:28:29 IST" duration-ms="61033">
+      <class name="org.smartnetwork.execution.Execution">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.smartnetwork.execution.Execution@670002]" started-at="2021-09-19T13:27:28 IST" name="setup" finished-at="2021-09-19T13:27:48 IST" duration-ms="19990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="applicationLogin(java.lang.reflect.Method)[pri:0, instance:org.smartnetwork.execution.Execution@670002]" started-at="2021-09-19T13:27:48 IST" name="applicationLogin" description="Application login with valid username and password." finished-at="2021-09-19T13:27:58 IST" duration-ms="9683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.smartnetwork.execution.Execution.applicationLogin(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLogin -->
+        <test-method signature="register(java.lang.reflect.Method)[pri:1, instance:org.smartnetwork.execution.Execution@670002]" started-at="2021-09-19T13:27:58 IST" name="register" description="Register into the application" finished-at="2021-09-19T13:28:03 IST" duration-ms="5078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.smartnetwork.execution.Execution.register(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="createPost(java.lang.reflect.Method)[pri:0, instance:org.smartnetwork.execution.Execution@670002]" started-at="2021-09-19T13:28:03 IST" name="createPost" description="Create post with uploading image and videos" finished-at="2021-09-19T13:28:28 IST" depends-on-methods="org.smartnetwork.execution.Execution.register" duration-ms="25260" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.smartnetwork.execution.Execution.createPost(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [HighEndCar] but found [a four-wheeled road vehicle that is powered by an engine and is able to carry a ... View all]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [HighEndCar] but found [a four-wheeled road vehicle that is powered by an engine and is able to carry a ... View all]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at org.smartnetwork.execution.Execution.createPost(Execution.java:121)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPost -->
+        <test-method is-config="true" signature="end()[pri:0, instance:org.smartnetwork.execution.Execution@670002]" started-at="2021-09-19T13:28:29 IST" name="end" finished-at="2021-09-19T13:28:29 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- org.smartnetwork.execution.Execution -->
+    </test> <!-- FunctionalTest -->
+  </suite> <!-- Smart Suite -->
+</testng-results>
